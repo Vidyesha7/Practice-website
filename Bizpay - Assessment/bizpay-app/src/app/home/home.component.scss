@@ -1,0 +1,184 @@
+.frames {
+    display: flex;
+    // height: 1350px;
+    @media (max-width:600px) {
+        height: 900px;
+    }
+    @media (max-width:900px) {
+        height: 1350px;
+    }
+}
+
+.home-page{
+    height: 100%;
+}
+
+.sidenav {
+    background-color: #1C1526;
+    padding: 20px 10px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+}
+
+.logo {
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo-image{
+        height: 60px;
+        @media (max-width: 600px){
+            height: 70px;
+            width: 70px;
+        }
+        @media (max-width: 900px) {
+            height: 50px;
+            width: 100px;
+        }
+    }
+    
+}
+
+
+.navigation-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-btn {
+    display: flex;
+    background: none;
+    color: white;
+    height: 50px;
+    width: 220px;
+    border: none;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 17px;
+    gap: 30px;
+    @media (max-width:900px) {
+        width: 175px;
+        gap: 15px;
+    }
+    
+    @media (max-width: 600px){
+        width: auto;
+    }
+
+    .button-name{
+        @media (max-width: 600px){
+            display: none;
+        }
+    }
+}
+
+.nav-btn:focus {
+    background-color: #FFFFFF;
+    color: #3D5CFF;
+}
+
+
+.content {
+    width: 75%;
+    background-color: #F7F8FA;
+    padding: 10px;
+
+    .header {
+        height: 70px;
+        width: 100%;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 35px;
+        padding: 10px 0px;
+    }
+}
+
+.bottom {
+    width: 100%;
+    display: flex;
+    color: #ffffff;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding-left: 100px;
+    position: relative;
+    top: 230px;
+    
+    @media (max-width:900px) {
+        top:700px;
+        gap: 10px;
+        padding-left: 30px;
+    }
+    
+    @media (max-width:600px) {
+        padding-left: 10px;
+        gap: 5px;
+    }
+}
+
+
+.icon {
+    display: flex;
+    height: 100%;
+    width: 70px;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgb(173, 173, 173);
+}
+
+.profile-image {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+}
+
+.wallet {
+    font-family: "poppins";
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: left;
+    color: #32324D;
+    margin-left: 10px;
+}
+
+.box-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    justify-content: center;
+
+    .box1 {
+        height: 600px;
+        width: 38%;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        
+    }
+
+    .box2 {
+        height: 575px;
+        width: 58%;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        
+    }
+}
